@@ -11,15 +11,14 @@ document.getElementById('deposit-buttton').addEventListener('click', function(){
  const previousDepositAmount = parseFloat(previousDepositText);
 
  const newDepositTotal = previousDepositAmount + newDepositAmount;
- 
+  depositTotal.innerText = newDepositTotal;
 
- depositTotal.innerText = newDepositTotal;
  //update ballance
- const balanceTotal = document.getElementById('balance-total');
- const balanceTotalText=balanceTotal.innerText;
- const previousBalanceTotal =parseFloat(balanceTotalText);
- const newBalanceTotal = previousBalanceTotal + newDepositAmount;
- balanceTotal.innerText=newBalanceTotal;
+//  const balanceTotal = document.getElementById('balance-total');
+//  const balanceTotalText=balanceTotal.innerText;
+//  const previousBalanceTotal =parseFloat(balanceTotalText);
+//  const newBalanceTotal = previousBalanceTotal + newDepositAmount;
+//  balanceTotal.innerText=newBalanceTotal;
 
 
  //clear input 
